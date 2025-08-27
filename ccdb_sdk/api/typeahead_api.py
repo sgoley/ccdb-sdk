@@ -21,9 +21,9 @@ from pydantic import Field, StrictStr
 from typing import List, Optional
 from typing_extensions import Annotated
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from ccdb_sdk.api_client import ApiClient, RequestSerialized
+from ccdb_sdk.api_response import ApiResponse
+from ccdb_sdk.rest import RESTResponseType
 
 
 class TypeaheadApi:

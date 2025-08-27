@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.complaint import Complaint
+from ccdb_sdk.models.complaint import Complaint
 from typing import Optional, Set
 from typing_extensions import Self
 

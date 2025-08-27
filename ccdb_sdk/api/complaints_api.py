@@ -20,13 +20,13 @@ from datetime import date
 from pydantic import Field, StrictBool, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
-from openapi_client.models.complaint import Complaint
-from openapi_client.models.search_result import SearchResult
-from openapi_client.models.states_result import StatesResult
+from ccdb_sdk.models.complaint import Complaint
+from ccdb_sdk.models.search_result import SearchResult
+from ccdb_sdk.models.states_result import StatesResult
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from ccdb_sdk.api_client import ApiClient, RequestSerialized
+from ccdb_sdk.api_response import ApiResponse
+from ccdb_sdk.rest import RESTResponseType
 
 
 class ComplaintsApi:

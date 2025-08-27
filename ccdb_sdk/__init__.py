@@ -53,41 +53,41 @@ __all__ = [
 
 if __import__("typing").TYPE_CHECKING:
     # import apis into sdk package
-    from openapi_client.api.complaints_api import ComplaintsApi as ComplaintsApi
-    from openapi_client.api.trends_api import TrendsApi as TrendsApi
-    from openapi_client.api.typeahead_api import TypeaheadApi as TypeaheadApi
+    from ccdb_sdk.api.complaints_api import ComplaintsApi as ComplaintsApi
+    from ccdb_sdk.api.trends_api import TrendsApi as TrendsApi
+    from ccdb_sdk.api.typeahead_api import TypeaheadApi as TypeaheadApi
     
     # import ApiClient
-    from openapi_client.api_response import ApiResponse as ApiResponse
-    from openapi_client.api_client import ApiClient as ApiClient
-    from openapi_client.configuration import Configuration as Configuration
-    from openapi_client.exceptions import OpenApiException as OpenApiException
-    from openapi_client.exceptions import ApiTypeError as ApiTypeError
-    from openapi_client.exceptions import ApiValueError as ApiValueError
-    from openapi_client.exceptions import ApiKeyError as ApiKeyError
-    from openapi_client.exceptions import ApiAttributeError as ApiAttributeError
-    from openapi_client.exceptions import ApiException as ApiException
+    from ccdb_sdk.api_response import ApiResponse as ApiResponse
+    from ccdb_sdk.api_client import ApiClient as ApiClient
+    from ccdb_sdk.configuration import Configuration as Configuration
+    from ccdb_sdk.exceptions import OpenApiException as OpenApiException
+    from ccdb_sdk.exceptions import ApiTypeError as ApiTypeError
+    from ccdb_sdk.exceptions import ApiValueError as ApiValueError
+    from ccdb_sdk.exceptions import ApiKeyError as ApiKeyError
+    from ccdb_sdk.exceptions import ApiAttributeError as ApiAttributeError
+    from ccdb_sdk.exceptions import ApiException as ApiException
     
     # import models into sdk package
-    from openapi_client.models.aggregation import Aggregation as Aggregation
-    from openapi_client.models.aggregation_date import AggregationDate as AggregationDate
-    from openapi_client.models.aggregation_field import AggregationField as AggregationField
-    from openapi_client.models.bucket import Bucket as Bucket
-    from openapi_client.models.complaint import Complaint as Complaint
-    from openapi_client.models.hit import Hit as Hit
-    from openapi_client.models.hits import Hits as Hits
-    from openapi_client.models.hits_total import HitsTotal as HitsTotal
-    from openapi_client.models.meta import Meta as Meta
-    from openapi_client.models.multi_level_aggregation import MultiLevelAggregation as MultiLevelAggregation
-    from openapi_client.models.multi_level_aggregation_field import MultiLevelAggregationField as MultiLevelAggregationField
-    from openapi_client.models.multi_level_bucket import MultiLevelBucket as MultiLevelBucket
-    from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw as MultiLevelBucketFieldRaw
-    from openapi_client.models.search_result import SearchResult as SearchResult
-    from openapi_client.models.search_result_aggregations import SearchResultAggregations as SearchResultAggregations
-    from openapi_client.models.states_result import StatesResult as StatesResult
-    from openapi_client.models.states_result_aggregations import StatesResultAggregations as StatesResultAggregations
-    from openapi_client.models.trends_result import TrendsResult as TrendsResult
-    from openapi_client.models.trends_result_aggregations import TrendsResultAggregations as TrendsResultAggregations
+    from ccdb_sdk.models.aggregation import Aggregation as Aggregation
+    from ccdb_sdk.models.aggregation_date import AggregationDate as AggregationDate
+    from ccdb_sdk.models.aggregation_field import AggregationField as AggregationField
+    from ccdb_sdk.models.bucket import Bucket as Bucket
+    from ccdb_sdk.models.complaint import Complaint as Complaint
+    from ccdb_sdk.models.hit import Hit as Hit
+    from ccdb_sdk.models.hits import Hits as Hits
+    from ccdb_sdk.models.hits_total import HitsTotal as HitsTotal
+    from ccdb_sdk.models.meta import Meta as Meta
+    from ccdb_sdk.models.multi_level_aggregation import MultiLevelAggregation as MultiLevelAggregation
+    from ccdb_sdk.models.multi_level_aggregation_field import MultiLevelAggregationField as MultiLevelAggregationField
+    from ccdb_sdk.models.multi_level_bucket import MultiLevelBucket as MultiLevelBucket
+    from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw as MultiLevelBucketFieldRaw
+    from ccdb_sdk.models.search_result import SearchResult as SearchResult
+    from ccdb_sdk.models.search_result_aggregations import SearchResultAggregations as SearchResultAggregations
+    from ccdb_sdk.models.states_result import StatesResult as StatesResult
+    from ccdb_sdk.models.states_result_aggregations import StatesResultAggregations as StatesResultAggregations
+    from ccdb_sdk.models.trends_result import TrendsResult as TrendsResult
+    from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations as TrendsResultAggregations
     
 else:
     from lazy_imports import LazyModule, as_package, load
@@ -98,41 +98,41 @@ else:
             ("__version__", __version__),
             ("__all__", __all__),
             """# import apis into sdk package
-from openapi_client.api.complaints_api import ComplaintsApi as ComplaintsApi
-from openapi_client.api.trends_api import TrendsApi as TrendsApi
-from openapi_client.api.typeahead_api import TypeaheadApi as TypeaheadApi
+from ccdb_sdk.api.complaints_api import ComplaintsApi as ComplaintsApi
+from ccdb_sdk.api.trends_api import TrendsApi as TrendsApi
+from ccdb_sdk.api.typeahead_api import TypeaheadApi as TypeaheadApi
 
 # import ApiClient
-from openapi_client.api_response import ApiResponse as ApiResponse
-from openapi_client.api_client import ApiClient as ApiClient
-from openapi_client.configuration import Configuration as Configuration
-from openapi_client.exceptions import OpenApiException as OpenApiException
-from openapi_client.exceptions import ApiTypeError as ApiTypeError
-from openapi_client.exceptions import ApiValueError as ApiValueError
-from openapi_client.exceptions import ApiKeyError as ApiKeyError
-from openapi_client.exceptions import ApiAttributeError as ApiAttributeError
-from openapi_client.exceptions import ApiException as ApiException
+from ccdb_sdk.api_response import ApiResponse as ApiResponse
+from ccdb_sdk.api_client import ApiClient as ApiClient
+from ccdb_sdk.configuration import Configuration as Configuration
+from ccdb_sdk.exceptions import OpenApiException as OpenApiException
+from ccdb_sdk.exceptions import ApiTypeError as ApiTypeError
+from ccdb_sdk.exceptions import ApiValueError as ApiValueError
+from ccdb_sdk.exceptions import ApiKeyError as ApiKeyError
+from ccdb_sdk.exceptions import ApiAttributeError as ApiAttributeError
+from ccdb_sdk.exceptions import ApiException as ApiException
 
 # import models into sdk package
-from openapi_client.models.aggregation import Aggregation as Aggregation
-from openapi_client.models.aggregation_date import AggregationDate as AggregationDate
-from openapi_client.models.aggregation_field import AggregationField as AggregationField
-from openapi_client.models.bucket import Bucket as Bucket
-from openapi_client.models.complaint import Complaint as Complaint
-from openapi_client.models.hit import Hit as Hit
-from openapi_client.models.hits import Hits as Hits
-from openapi_client.models.hits_total import HitsTotal as HitsTotal
-from openapi_client.models.meta import Meta as Meta
-from openapi_client.models.multi_level_aggregation import MultiLevelAggregation as MultiLevelAggregation
-from openapi_client.models.multi_level_aggregation_field import MultiLevelAggregationField as MultiLevelAggregationField
-from openapi_client.models.multi_level_bucket import MultiLevelBucket as MultiLevelBucket
-from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw as MultiLevelBucketFieldRaw
-from openapi_client.models.search_result import SearchResult as SearchResult
-from openapi_client.models.search_result_aggregations import SearchResultAggregations as SearchResultAggregations
-from openapi_client.models.states_result import StatesResult as StatesResult
-from openapi_client.models.states_result_aggregations import StatesResultAggregations as StatesResultAggregations
-from openapi_client.models.trends_result import TrendsResult as TrendsResult
-from openapi_client.models.trends_result_aggregations import TrendsResultAggregations as TrendsResultAggregations
+from ccdb_sdk.models.aggregation import Aggregation as Aggregation
+from ccdb_sdk.models.aggregation_date import AggregationDate as AggregationDate
+from ccdb_sdk.models.aggregation_field import AggregationField as AggregationField
+from ccdb_sdk.models.bucket import Bucket as Bucket
+from ccdb_sdk.models.complaint import Complaint as Complaint
+from ccdb_sdk.models.hit import Hit as Hit
+from ccdb_sdk.models.hits import Hits as Hits
+from ccdb_sdk.models.hits_total import HitsTotal as HitsTotal
+from ccdb_sdk.models.meta import Meta as Meta
+from ccdb_sdk.models.multi_level_aggregation import MultiLevelAggregation as MultiLevelAggregation
+from ccdb_sdk.models.multi_level_aggregation_field import MultiLevelAggregationField as MultiLevelAggregationField
+from ccdb_sdk.models.multi_level_bucket import MultiLevelBucket as MultiLevelBucket
+from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw as MultiLevelBucketFieldRaw
+from ccdb_sdk.models.search_result import SearchResult as SearchResult
+from ccdb_sdk.models.search_result_aggregations import SearchResultAggregations as SearchResultAggregations
+from ccdb_sdk.models.states_result import StatesResult as StatesResult
+from ccdb_sdk.models.states_result_aggregations import StatesResultAggregations as StatesResultAggregations
+from ccdb_sdk.models.trends_result import TrendsResult as TrendsResult
+from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations as TrendsResultAggregations
 
 """,
             name=__name__,

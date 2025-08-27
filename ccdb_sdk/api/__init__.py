@@ -2,9 +2,9 @@
 
 if __import__("typing").TYPE_CHECKING:
     # import apis into api package
-    from openapi_client.api.complaints_api import ComplaintsApi
-    from openapi_client.api.trends_api import TrendsApi
-    from openapi_client.api.typeahead_api import TypeaheadApi
+    from ccdb_sdk.api.complaints_api import ComplaintsApi
+    from ccdb_sdk.api.trends_api import TrendsApi
+    from ccdb_sdk.api.typeahead_api import TypeaheadApi
     
 else:
     from lazy_imports import LazyModule, as_package, load
@@ -13,9 +13,9 @@ else:
         LazyModule(
             *as_package(__file__),
             """# import apis into api package
-from openapi_client.api.complaints_api import ComplaintsApi
-from openapi_client.api.trends_api import TrendsApi
-from openapi_client.api.typeahead_api import TypeaheadApi
+from ccdb_sdk.api.complaints_api import ComplaintsApi
+from ccdb_sdk.api.trends_api import TrendsApi
+from ccdb_sdk.api.typeahead_api import TypeaheadApi
 
 """,
             name=__name__,

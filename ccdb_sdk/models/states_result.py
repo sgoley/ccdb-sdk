@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.states_result_aggregations import StatesResultAggregations
+from ccdb_sdk.models.states_result_aggregations import StatesResultAggregations
 from typing import Optional, Set
 from typing_extensions import Self
 

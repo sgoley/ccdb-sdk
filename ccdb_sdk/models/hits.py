@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictFloat, StrictInt
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from openapi_client.models.hit import Hit
-from openapi_client.models.hits_total import HitsTotal
+from ccdb_sdk.models.hit import Hit
+from ccdb_sdk.models.hits_total import HitsTotal
 from typing import Optional, Set
 from typing_extensions import Self
 

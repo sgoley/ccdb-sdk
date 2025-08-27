@@ -15,25 +15,25 @@
 
 if __import__("typing").TYPE_CHECKING:
     # import models into model package
-    from openapi_client.models.aggregation import Aggregation
-    from openapi_client.models.aggregation_date import AggregationDate
-    from openapi_client.models.aggregation_field import AggregationField
-    from openapi_client.models.bucket import Bucket
-    from openapi_client.models.complaint import Complaint
-    from openapi_client.models.hit import Hit
-    from openapi_client.models.hits import Hits
-    from openapi_client.models.hits_total import HitsTotal
-    from openapi_client.models.meta import Meta
-    from openapi_client.models.multi_level_aggregation import MultiLevelAggregation
-    from openapi_client.models.multi_level_aggregation_field import MultiLevelAggregationField
-    from openapi_client.models.multi_level_bucket import MultiLevelBucket
-    from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
-    from openapi_client.models.search_result import SearchResult
-    from openapi_client.models.search_result_aggregations import SearchResultAggregations
-    from openapi_client.models.states_result import StatesResult
-    from openapi_client.models.states_result_aggregations import StatesResultAggregations
-    from openapi_client.models.trends_result import TrendsResult
-    from openapi_client.models.trends_result_aggregations import TrendsResultAggregations
+    from ccdb_sdk.models.aggregation import Aggregation
+    from ccdb_sdk.models.aggregation_date import AggregationDate
+    from ccdb_sdk.models.aggregation_field import AggregationField
+    from ccdb_sdk.models.bucket import Bucket
+    from ccdb_sdk.models.complaint import Complaint
+    from ccdb_sdk.models.hit import Hit
+    from ccdb_sdk.models.hits import Hits
+    from ccdb_sdk.models.hits_total import HitsTotal
+    from ccdb_sdk.models.meta import Meta
+    from ccdb_sdk.models.multi_level_aggregation import MultiLevelAggregation
+    from ccdb_sdk.models.multi_level_aggregation_field import MultiLevelAggregationField
+    from ccdb_sdk.models.multi_level_bucket import MultiLevelBucket
+    from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
+    from ccdb_sdk.models.search_result import SearchResult
+    from ccdb_sdk.models.search_result_aggregations import SearchResultAggregations
+    from ccdb_sdk.models.states_result import StatesResult
+    from ccdb_sdk.models.states_result_aggregations import StatesResultAggregations
+    from ccdb_sdk.models.trends_result import TrendsResult
+    from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations
     
 else:
     from lazy_imports import LazyModule, as_package, load
@@ -42,25 +42,25 @@ else:
         LazyModule(
             *as_package(__file__),
             """# import models into model package
-from openapi_client.models.aggregation import Aggregation
-from openapi_client.models.aggregation_date import AggregationDate
-from openapi_client.models.aggregation_field import AggregationField
-from openapi_client.models.bucket import Bucket
-from openapi_client.models.complaint import Complaint
-from openapi_client.models.hit import Hit
-from openapi_client.models.hits import Hits
-from openapi_client.models.hits_total import HitsTotal
-from openapi_client.models.meta import Meta
-from openapi_client.models.multi_level_aggregation import MultiLevelAggregation
-from openapi_client.models.multi_level_aggregation_field import MultiLevelAggregationField
-from openapi_client.models.multi_level_bucket import MultiLevelBucket
-from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
-from openapi_client.models.search_result import SearchResult
-from openapi_client.models.search_result_aggregations import SearchResultAggregations
-from openapi_client.models.states_result import StatesResult
-from openapi_client.models.states_result_aggregations import StatesResultAggregations
-from openapi_client.models.trends_result import TrendsResult
-from openapi_client.models.trends_result_aggregations import TrendsResultAggregations
+from ccdb_sdk.models.aggregation import Aggregation
+from ccdb_sdk.models.aggregation_date import AggregationDate
+from ccdb_sdk.models.aggregation_field import AggregationField
+from ccdb_sdk.models.bucket import Bucket
+from ccdb_sdk.models.complaint import Complaint
+from ccdb_sdk.models.hit import Hit
+from ccdb_sdk.models.hits import Hits
+from ccdb_sdk.models.hits_total import HitsTotal
+from ccdb_sdk.models.meta import Meta
+from ccdb_sdk.models.multi_level_aggregation import MultiLevelAggregation
+from ccdb_sdk.models.multi_level_aggregation_field import MultiLevelAggregationField
+from ccdb_sdk.models.multi_level_bucket import MultiLevelBucket
+from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
+from ccdb_sdk.models.search_result import SearchResult
+from ccdb_sdk.models.search_result_aggregations import SearchResultAggregations
+from ccdb_sdk.models.states_result import StatesResult
+from ccdb_sdk.models.states_result_aggregations import StatesResultAggregations
+from ccdb_sdk.models.trends_result import TrendsResult
+from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations
 
 """,
             name=__name__,

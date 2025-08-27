@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
+from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
 from typing import Optional, Set
 from typing_extensions import Self
 

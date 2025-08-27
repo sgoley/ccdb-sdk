@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.multi_level_aggregation_field import MultiLevelAggregationField
+from ccdb_sdk.models.multi_level_aggregation_field import MultiLevelAggregationField
 from typing import Optional, Set
 from typing_extensions import Self
 

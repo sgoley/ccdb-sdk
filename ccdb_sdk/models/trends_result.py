@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.trends_result_aggregations import TrendsResultAggregations
+from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations
 from typing import Optional, Set
 from typing_extensions import Self
 
