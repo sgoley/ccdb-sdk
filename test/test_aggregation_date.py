@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.aggregation_date import AggregationDate
+from ccdb_sdk.models.aggregation_date import AggregationDate
 
 class TestAggregationDate(unittest.TestCase):
     """AggregationDate unit test stubs"""

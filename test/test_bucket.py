@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.bucket import Bucket
+from ccdb_sdk.models.bucket import Bucket
 
 class TestBucket(unittest.TestCase):
     """Bucket unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.meta import Meta
+from ccdb_sdk.models.meta import Meta
 
 class TestMeta(unittest.TestCase):
     """Meta unit test stubs"""

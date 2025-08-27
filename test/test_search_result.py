@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.search_result import SearchResult
+from ccdb_sdk.models.search_result import SearchResult
 
 class TestSearchResult(unittest.TestCase):
     """SearchResult unit test stubs"""
@@ -35,8 +35,8 @@ class TestSearchResult(unittest.TestCase):
         model = SearchResult()
         if include_optional:
             return SearchResult(
-                meta = openapi_client.models.meta.Meta(
-                    break_points = openapi_client.models.break_points.break_points(), 
+                meta = ccdb_sdk.models.meta.Meta(
+                    break_points = ccdb_sdk.models.break_points.break_points(), 
                     has_data_issue = True, 
                     is_data_stale = True, 
                     is_narrative_stale = True, 
@@ -44,35 +44,35 @@ class TestSearchResult(unittest.TestCase):
                     last_updated = '', 
                     license = '', 
                     total_record_count = 56, ),
-                aggregations = openapi_client.models.search_result_aggregations.SearchResult_aggregations(
-                    company_public_response = openapi_client.models.aggregation.Aggregation(
+                aggregations = ccdb_sdk.models.search_result_aggregations.SearchResult_aggregations(
+                    company_public_response = ccdb_sdk.models.aggregation.Aggregation(
                         doc_count = 56, 
-                        field = openapi_client.models.aggregation_field.Aggregation_field(
+                        field = ccdb_sdk.models.aggregation_field.Aggregation_field(
                             buckets = [
-                                openapi_client.models.bucket.Bucket(
+                                ccdb_sdk.models.bucket.Bucket(
                                     doc_count = 56, 
                                     key = '', )
                                 ], 
                             doc_count_error_upper_bound = 56, 
                             sum_other_doc_count = 56, ), ), 
-                    company_response = openapi_client.models.aggregation.Aggregation(
+                    company_response = ccdb_sdk.models.aggregation.Aggregation(
                         doc_count = 56, ), 
                     consumer_consent_provided = , 
                     consumer_disputed = , 
                     has_narrative = , 
-                    issue = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                    issue = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                         doc_count = 56, ), 
-                    product = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                    product = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                         doc_count = 56, ), 
                     state = , 
                     submitted_via = , 
                     tags = , 
                     timely = , 
                     zip_code = , ),
-                hits = openapi_client.models.hits.Hits(
+                hits = ccdb_sdk.models.hits.Hits(
                     hits = [
-                        openapi_client.models.hit.Hit(
-                            _source = openapi_client.models.complaint.Complaint(
+                        ccdb_sdk.models.hit.Hit(
+                            _source = ccdb_sdk.models.complaint.Complaint(
                                 company = '', 
                                 company_public_response = '', 
                                 company_response = '', 
@@ -94,7 +94,7 @@ class TestSearchResult(unittest.TestCase):
                                 zip_code = '', ), )
                         ], 
                     max_score = 1.337, 
-                    total = openapi_client.models.hits_total.Hits_total(
+                    total = ccdb_sdk.models.hits_total.Hits_total(
                         value = 56, 
                         relation = '', ), )
             )

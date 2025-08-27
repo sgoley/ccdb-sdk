@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.aggregation_field import AggregationField
+from ccdb_sdk.models.aggregation_field import AggregationField
 
 class TestAggregationField(unittest.TestCase):
     """AggregationField unit test stubs"""
@@ -36,7 +36,7 @@ class TestAggregationField(unittest.TestCase):
         if include_optional:
             return AggregationField(
                 buckets = [
-                    openapi_client.models.bucket.Bucket(
+                    ccdb_sdk.models.bucket.Bucket(
                         doc_count = 56, 
                         key = '', )
                     ],

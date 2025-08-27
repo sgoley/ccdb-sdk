@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hits_total import HitsTotal
+from ccdb_sdk.models.hits_total import HitsTotal
 
 class TestHitsTotal(unittest.TestCase):
     """HitsTotal unit test stubs"""

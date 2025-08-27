@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hits import Hits
+from ccdb_sdk.models.hits import Hits
 
 class TestHits(unittest.TestCase):
     """Hits unit test stubs"""
@@ -36,8 +36,8 @@ class TestHits(unittest.TestCase):
         if include_optional:
             return Hits(
                 hits = [
-                    openapi_client.models.hit.Hit(
-                        _source = openapi_client.models.complaint.Complaint(
+                    ccdb_sdk.models.hit.Hit(
+                        _source = ccdb_sdk.models.complaint.Complaint(
                             company = '', 
                             company_public_response = '', 
                             company_response = '', 
@@ -59,7 +59,7 @@ class TestHits(unittest.TestCase):
                             zip_code = '', ), )
                     ],
                 max_score = 1.337,
-                total = openapi_client.models.hits_total.Hits_total(
+                total = ccdb_sdk.models.hits_total.Hits_total(
                     value = 56, 
                     relation = '', )
             )

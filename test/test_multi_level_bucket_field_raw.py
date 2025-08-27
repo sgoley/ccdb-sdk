@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
+from ccdb_sdk.models.multi_level_bucket_field_raw import MultiLevelBucketFieldRaw
 
 class TestMultiLevelBucketFieldRaw(unittest.TestCase):
     """MultiLevelBucketFieldRaw unit test stubs"""
@@ -36,9 +36,9 @@ class TestMultiLevelBucketFieldRaw(unittest.TestCase):
         if include_optional:
             return MultiLevelBucketFieldRaw(
                 buckets = [
-                    openapi_client.models.aggregation.Aggregation(
+                    ccdb_sdk.models.aggregation.Aggregation(
                         doc_count = 56, 
-                        field = openapi_client.models.aggregation_field.Aggregation_field(
+                        field = ccdb_sdk.models.aggregation_field.Aggregation_field(
                             doc_count_error_upper_bound = 56, 
                             sum_other_doc_count = 56, ), )
                     ]

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.complaints_api import ComplaintsApi
+from ccdb_sdk.api.complaints_api import ComplaintsApi
 
 
 class TestComplaintsApi(unittest.TestCase):

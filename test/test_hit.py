@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hit import Hit
+from ccdb_sdk.models.hit import Hit
 
 class TestHit(unittest.TestCase):
     """Hit unit test stubs"""
@@ -35,7 +35,7 @@ class TestHit(unittest.TestCase):
         model = Hit()
         if include_optional:
             return Hit(
-                source = openapi_client.models.complaint.Complaint(
+                source = ccdb_sdk.models.complaint.Complaint(
                     company = '', 
                     company_public_response = '', 
                     company_response = '', 

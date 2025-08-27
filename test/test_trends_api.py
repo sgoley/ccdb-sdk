@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.trends_api import TrendsApi
+from ccdb_sdk.api.trends_api import TrendsApi
 
 
 class TestTrendsApi(unittest.TestCase):

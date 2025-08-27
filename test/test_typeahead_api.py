@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.typeahead_api import TypeaheadApi
+from ccdb_sdk.api.typeahead_api import TypeaheadApi
 
 
 class TestTypeaheadApi(unittest.TestCase):

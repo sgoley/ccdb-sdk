@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.trends_result_aggregations import TrendsResultAggregations
+from ccdb_sdk.models.trends_result_aggregations import TrendsResultAggregations
 
 class TestTrendsResultAggregations(unittest.TestCase):
     """TrendsResultAggregations unit test stubs"""
@@ -35,68 +35,68 @@ class TestTrendsResultAggregations(unittest.TestCase):
         model = TrendsResultAggregations()
         if include_optional:
             return TrendsResultAggregations(
-                company = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                company = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 
                         sum_other_doc_count = 56, ), ),
-                issue = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                issue = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 
                         sum_other_doc_count = 56, ), ),
-                product = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                product = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 
                         sum_other_doc_count = 56, ), ),
-                sub_issue = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                sub_issue = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 
                         sum_other_doc_count = 56, ), ),
-                sub_product = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                sub_product = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 
                         sum_other_doc_count = 56, ), ),
-                tags = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                tags = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                     doc_count = 56, 
-                    field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                    field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                         buckets = [
-                            openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                            ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                 doc_count = 56, 
-                                field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                 key = '', )
                             ], 
                         doc_count_error_upper_bound = 56, 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.trends_result import TrendsResult
+from ccdb_sdk.models.trends_result import TrendsResult
 
 class TestTrendsResult(unittest.TestCase):
     """TrendsResult unit test stubs"""
@@ -35,19 +35,19 @@ class TestTrendsResult(unittest.TestCase):
         model = TrendsResult()
         if include_optional:
             return TrendsResult(
-                aggregations = openapi_client.models.trends_result_aggregations.TrendsResult_aggregations(
-                    company = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                aggregations = ccdb_sdk.models.trends_result_aggregations.TrendsResult_aggregations(
+                    company = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                         doc_count = 56, 
-                        field = openapi_client.models.multi_level_aggregation_field.MultiLevelAggregation_field(
+                        field = ccdb_sdk.models.multi_level_aggregation_field.MultiLevelAggregation_field(
                             buckets = [
-                                openapi_client.models.multi_level_bucket.MultiLevelBucket(
+                                ccdb_sdk.models.multi_level_bucket.MultiLevelBucket(
                                     doc_count = 56, 
-                                    field/raw = openapi_client.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
+                                    field/raw = ccdb_sdk.models.multi_level_bucket_field_raw.MultiLevelBucket_field_raw(), 
                                     key = '', )
                                 ], 
                             doc_count_error_upper_bound = 56, 
                             sum_other_doc_count = 56, ), ), 
-                    issue = openapi_client.models.multi_level_aggregation.MultiLevelAggregation(
+                    issue = ccdb_sdk.models.multi_level_aggregation.MultiLevelAggregation(
                         doc_count = 56, ), 
                     product = , 
                     sub_issue = , 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.complaint import Complaint
+from ccdb_sdk.models.complaint import Complaint
 
 class TestComplaint(unittest.TestCase):
     """Complaint unit test stubs"""

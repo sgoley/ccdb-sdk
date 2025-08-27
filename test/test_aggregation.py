@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.aggregation import Aggregation
+from ccdb_sdk.models.aggregation import Aggregation
 
 class TestAggregation(unittest.TestCase):
     """Aggregation unit test stubs"""
@@ -36,9 +36,9 @@ class TestAggregation(unittest.TestCase):
         if include_optional:
             return Aggregation(
                 doc_count = 56,
-                var_field = openapi_client.models.aggregation_field.Aggregation_field(
+                var_field = ccdb_sdk.models.aggregation_field.Aggregation_field(
                     buckets = [
-                        openapi_client.models.bucket.Bucket(
+                        ccdb_sdk.models.bucket.Bucket(
                             doc_count = 56, 
                             key = '', )
                         ], 
